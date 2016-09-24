@@ -16,7 +16,7 @@
 /*Exercise 4.  Instruct the following function to display the message "My name is Lee, Brrruuuce Lee!" in a new paragraph element after the button is clicked.*/
 
   function kungfu(){
-    ________.getElementById(________).________ = "My name is Lee, Brrruuuce Lee!";
+    document.getElementById('beWater').innerHTML = "My name is Lee, Brrruuuce Lee!";
   }
 
 
@@ -28,10 +28,10 @@ window.onload = function (){
 
 var firstQuote = "Our lives are defined by opportunities; even the ones we miss.";
 
-_________.getElementById(________).addEventListener(______, sayQuote);
+document.getElementById("Benjamin").addEventListener("click", sayQuote);
 
 function sayQuote(){
-  document._________(_______).__________ = __________;
+  document.getElementById("lines").innerHTML = firstQuote;
 }
 
 
