@@ -80,14 +80,58 @@ function showMe (){
 Make a visual list of the items in the orders array. When clicking on the product, you must show and hide the price for that item.*/
 
 
-var orders = [{product: "Finger Toothbrush", price: 9.99}, {product: "Barry Manilow's Greatest Hits Collection Vol 1", price: 500.01}, {product: "Goldfish Aquairum Phone Booth", price: 199.99}, {product: "Woof Washer 360", price: 9.99}, {product: "Sauna Pants", price: 39.95}, {product: "Noiseless Mute Karaoke Microphone", price: 79.99}, {product: "Necktie Umbrella", price: 16.86}];
+var orders = [{product: "Finger Toothbrush", price: 9.99},
+ {product: "Barry Manilow's Greatest Hits Collection Vol 1", price: 500.01}, 
+ {product: "Goldfish Aquairum Phone Booth", price: 199.99}, 
+ {product: "Woof Washer 360", price: 9.99},
+{product: "Sauna Pants", price: 39.95},
+{product: "Noiseless Mute Karaoke Microphone", price: 79.99}, 
+  {product: "Necktie Umbrella", price: 16.86}];
 
+var myOrder= document.getElementById('myOrders');
+
+//function bossOrder (){
+  //for(var i=0; i < orders.length; i++){
+    //if(pleaseWork.style.display==="none"){
+      //pleaseWork.style.display="block";
+   //} else { pleaseWork.style.display="none";
+  //}
+
+  //}
+//}
+
+function newButton(){
+  for (var i=0; i < orders.length; i++){
+    var newOrder= document.createElement('button');
+    newOrder.innerHTML= orders[i].product;
+    //newOrder.addEventListener('click', newButton);
+    myOrder.appendChild(newOrder);
+    }
+  }
+
+newButton();
 
 };
 
 
 
+//document.getElementById('').addEventListener();
 
+
+
+//var whyWontYouWork= document.getElementById('myOrders').innerHTML=orders;
+
+
+//function bossOrder (){
+ // for(var i=0; i < orders.length; i++){
+ //   var pleaseWork= document.getElementById('myOrders');
+  //  if(pleaseWork.style.display==="none"){
+   //   pleaseWork.style.display="block";
+  // } else {pleaseWork.style.display="none";
+ // }
+
+ // }
+//}
 
 
 
