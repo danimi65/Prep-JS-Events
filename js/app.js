@@ -1,11 +1,11 @@
 /*Exercise 1.  Fill in the correct id to target the paragraph tag*/
   function fontSize(){
-    document.getElementById(______).style.fontSize = "200%";
+    document.getElementById("box1").style.fontSize = "200%";
   }
 
  /*Exercise 2. change the font color to red*/
   function colorMeBadd(){
-    document.getElementById(_______).style.color = '______'; 
+    document.getElementById('box2').style.color = 'red'; 
   }
 
 /*Exercise 3. fill in the spaces to make this function operate:*/
